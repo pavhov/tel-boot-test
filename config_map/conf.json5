@@ -1,0 +1,35 @@
+{
+  app: {
+    logging: 'debug'
+    //'info' | 'debug' | 'warning' | 'error'
+  },
+  api: {
+    version: 'v1',
+    endpoint: 'api',
+    http: {
+      ip: '0.0.0.0',
+      port: 5001
+    }
+  },
+  db: {
+    dialect: 'postgres',
+    host: '127.0.0.1',
+    port: 5432,
+    user: 'postgres',
+    pass: 'mysecurepassword',
+    name: 'telegram_boot_db',
+    pool_min: 15,
+    pool_max: 25
+  },
+  binance: {
+    api: {
+      key: "kqiN5OrdWTdx3fnEuu1Owzqr5n1tygeY4yRQEWNE1HWdFE6E9pJuBAlB853mjWAy",
+      secret: "qGu6hDnkhIuwH8KKZPv6qCXY0n6S8vYGNtWvjX5xIygLaB3rHMAQYkC0TKz1VSY7",
+    },
+  },
+  telegram: {
+    api: {
+      token: "1696654118:AAEkPmzJt5ftaqTUMElyq92iD56q4f0E3es",
+    }
+  },
+}
