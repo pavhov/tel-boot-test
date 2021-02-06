@@ -8,7 +8,7 @@
     endpoint: 'api',
     http: {
       ip: '0.0.0.0',
-      port: 5001
+      port: 5005
     }
   },
   db: {
@@ -23,8 +23,8 @@
   },
   binance: {
     api: {
-      key: "kqiN5OrdWTdx3fnEuu1Owzqr5n1tygeY4yRQEWNE1HWdFE6E9pJuBAlB853mjWAy",
-      secret: "qGu6hDnkhIuwH8KKZPv6qCXY0n6S8vYGNtWvjX5xIygLaB3rHMAQYkC0TKz1VSY7",
+      key: "Q9PtDBgY3qqM0SxtjuiGp6xWSoSHmunfu4Iq3tvcCFN2q8uOCp8xB8ddT60G1Rfy",
+      secret: "oYNfFlupIQY6U71Ld8IAMG8dTbHoeCL0vg4YqS4K2VAimDsYlOuQS86h6Nk0Llx4",
     },
   },
   telegram: {

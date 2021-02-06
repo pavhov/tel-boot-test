@@ -29,7 +29,7 @@ export function KoaApi(_options: { path: string | string[] }) {
                 baseRouter.use(router.path, router.route.routes(), router.route.allowedMethods());
                 commonRouter.use(baseRouter.routes());
             }
-            const path = `/${Params["api_endpoint"]}`;
+            const path = `/${Params["api_endpoint"]}/${Params["api_version"]}`;
             approuter.use(path, commonRouter.routes());
             koa[key].app.use(approuter.routes());
         });

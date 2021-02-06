@@ -1,5 +1,6 @@
-import configMap from "./Map";
-import { json5 } from "../json5/Parser";
+import dotenv, {DotenvParseOutput} from "dotenv";
+import configMap                   from "./Map";
+import {json5}                     from "../json5/Parser";
 
 const Params: any = {
     params: {} as any
@@ -9,6 +10,9 @@ const Params: any = {
  * @name parse
  */
 const parse = () => {
+    dotenv.config({
+        path: `${process.cwd()}/.env`
+    });
     for (let name in configMap) {
         if (configMap.hasOwnProperty(name)) {
             let config = configMap[name];
