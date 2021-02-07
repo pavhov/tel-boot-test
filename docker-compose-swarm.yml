@@ -17,6 +17,9 @@ services:
         - "traefik.http.services.api-tel-boot.loadbalancer.server.port=80"
         - "traefik.http.services.api-tel-boot.loadbalancer.server.scheme=http"
 
+      placement:
+        - "node.role==manager"
+        - "node.labels.tag==main"
     networks:
       - "traefik"
 
