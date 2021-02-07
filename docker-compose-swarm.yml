@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   tel-boot-service:
-    image: tel-boot-service:latest
+    image: pavhov/tel-boot-service:latest
     environment:
       app_logging: info
       api_http_ip: 0.0.0.0

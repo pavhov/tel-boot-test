@@ -1,5 +1,5 @@
 build:
-	docker build --tag tel-boot-service:latest .
+	docker build --tag pavhov/tel-boot-service:latest .
 dev:
 	docker-compose --file docker-compose-dev.yml up --force-recreate tel-boot-service
 swarm: build
